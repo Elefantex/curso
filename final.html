@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // let lines;
+        //lines = parseInt(prompt("Lineas"));
+       
+       
+        //esto funciona sacando todo el rato la misma linea
+        /*
+        probando = parseInt(prompt("pon las lineas"));
+        let resultado = "";
+        let resultado2 = "";
+
+        for(var lineas = probando; lineas > 0; lineas=lineas-1){
+              if (lineas %2 == 0){
+                resultado += "X";  
+                }
+                 else{
+                resultado += "O";
+                 }  
+            
+            }
+             while(probando != 0){
+            console.log(resultado);
+        
+            probando = probando -1;
+        }
+        */
+        /*
+        //esto funciona sacando una linea vacia si no es par o al reves
+        var probando = parseInt(prompt("pon las lineas"));
+        var resultado = "";
+        var resultado2 = "";
+        
+        for(var lineas = probando; lineas > 0; lineas=lineas-1){
+            if(probando %2 == 0){
+              if (lineas %2 == 0){
+                resultado += "X";  
+                }
+                 else{
+                resultado += "O";
+                 }  
+            }
+            else{
+                    if (lineas %2 ==0){
+                     resultado2 += "X";  
+                     }
+                    else{
+                    resultado2 += "O";
+                    }   
+            }
+        }
+        while(probando != 0){
+            console.log(resultado);
+            console.log(resultado2);
+            probando = probando -1;
+        }
+        */
+        var probando = parseInt(prompt("pon las lineas"));
+        var resultado = "";
+        var resultado2 = "";
+        var probando2 = probando;
+        var lineas = probando;
+        for(var lineas=probando2; lineas > 0; lineas=lineas-1){
+            for(var probando2; probando2 >0;probando2=probando2-1){
+                if(probando2 %2 == 0){
+                    resultado += "X";
+                }
+                else{
+                    resultado +="O";
+                }
+                
+            }
+           if(lineas %2 == 1){
+               resultado2 +="X";
+           }
+           else{
+               resultado2 += "O";
+           }
+        }
+            
+        while(probando != 0){
+            console.log(resultado);
+            console.log(resultado2);
+            probando = probando -1;
+        }
+       
+        
+        
+        
+        
+/*
+        while(probando !=0){
+        for(var lineas = probando; lineas > 0; lineas=lineas-1){
+            if(probando %2 == 0){
+              if (lineas %2 == 0){
+                resultado += "X";  
+                }
+                 else{
+                resultado += "O";
+                 }  
+            }
+            if(probando %2 ==1){
+                    if (lineas %2 ==0){
+                     resultado2 += "X";  
+                     }
+                    else{
+                    resultado2 += "O";
+                    }   
+            }
+        }
+        probando=probando-1;
+        console.log(resultado);
+        console.log(resultado2);
+        
+        }*/
+        /*while(probando != 0){
+            console.log(resultado);
+            console.log(resultado2);
+            probando = probando -1;
+        }*/
+
+
+    
+        
+       
+    </script>
+</body>
+</html>

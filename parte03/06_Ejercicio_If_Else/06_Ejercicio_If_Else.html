@@ -17,10 +17,12 @@
             console.log("Eres mayor de edad")
         }
         else(console.log("Eres menor de edad"));
-        correct =5;
-        let respuesta = prompt("numero");
+        
+        correct = 5;
+        let respuesta = parseInt(prompt("numero entre 0 y 10"));
+        /*
         if (respuesta == correct){
-            console.log("Has acertado");
+            console.log("Has acertado intento 1");
         }
         else{
             console.log("has fallado el intento 1")
@@ -28,21 +30,77 @@
                 if(respuesta==correct){
                     console.log("has acertado al intento 2");
                 }
-                    else{
-                        console.log("intento 2 fallido");
-                        respuesta=prompt("intento 2");
+                else{
+                    console.log("intento 2 fallido");
+                    respuesta=prompt("intento 3");
                         if (respuesta==correct){
                           console.log("Has acertado al intento 3");
-                      }
-                      else{
+                         }
+                         else{
                           console.log("Intento 3 fallido");
-                      }
-                      }
-                      
-                    
+                          respuesta=prompt("intento 4");
+                            if(respuesta ==correct){
+                                console.log("Has acertado el intento 4");
+                            }
+                            else{
+                                console.log("Has fallado el intento 4");
+                            }
+                         }
+                    }     
+            }*/
+           
+            if(respuesta ==5){
+                console.log("lo hiciste a la primera");
             }
+            var total = 1;
+            var intentos = 1;
+            
+            while(respuesta != 5){
+                respuesta= parseInt(prompt("prueba de nuevo"));
+                intentos= parseInt(intentos +1);
+                total = parseInt(total + 1);
+                if(respuesta!=5){
+                    console.log("Fallaste por " + intentos + " veces");                    
+                }
+                else
+                (console.log("lo hiciste a la ", total, " vez"));
+                console.log("intentos extra",intentos);
+                    if (intentos ==3){
+                        break;
+                    }
+                }
+            
+
+        /*switch(respuesta){
+           case 5:
+               console.log("has acertado");
+            break;
+            default:
+                console.log("Has fallado");
+                respuesta=prompt("Inserta un numero");
+            break;
+            
+            
+        } */
+       /* switch(respuesta){
+            case 1:
+                console.log("avanzar");
+            break;
+            case 2:
+                console.log("atras");
+            break;
+            case 3:
+                console.log("refrescar");
+            break;
+            case 4:
+                console.log("salir");
+            break;
+            default:
+                console.log("valor incorrecto");
+            
+        }
         
-        
+        */
        
 
        /*let corecta;
