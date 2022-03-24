@@ -17,6 +17,33 @@
             console.log("Eres mayor de edad")
         }
         else(console.log("Eres menor de edad"));
+        correct =5;
+        let respuesta = prompt("numero");
+        if (respuesta == correct){
+            console.log("Has acertado");
+        }
+        else{
+            console.log("has fallado el intento 1")
+            respuesta=prompt("Intentoe1");
+                if(respuesta==correct){
+                    console.log("has acertado al intento 2");
+                }
+                    else{
+                        console.log("intento 2 fallido");
+                        respuesta=prompt("intento 2");
+                        if (respuesta==correct){
+                          console.log("Has acertado al intento 3");
+                      }
+                      else{
+                          console.log("Intento 3 fallido");
+                      }
+                      }
+                      
+                    
+            }
+        
+        
+       
 
        /*let corecta;
        correcta = 5;
