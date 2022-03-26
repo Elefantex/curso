@@ -5,34 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
-<body>
+<body style="background-color:black">
     <script>
        // let lines;
         //lines = parseInt(prompt("Lineas"));
-       
-       
-        //esto funciona sacando todo el rato la misma linea
-        /*
-        probando = parseInt(prompt("pon las lineas"));
-        let resultado = "";
-        let resultado2 = "";
+                //esto funciona sacando todo el rato la misma linea
 
-        for(var lineas = probando; lineas > 0; lineas=lineas-1){
-              if (lineas %2 == 0){
-                resultado += "X";  
-                }
-                 else{
-                resultado += "O";
-                 }  
-            
-            }
-             while(probando != 0){
-            console.log(resultado);
+       /*
+       probando =parseInt(prompt("pon las lineas"));
+       let resultado="";
+
+       for(lineas = probando;lineas>0;lineas=lineas-1){
+           if(lineas %2==0){
+               resultado +="X";
+           }
+           else{
+               resultado +="O";
+           }
+       }
+      
+       while(probando!=0){
+           console.log(resultado);
+           probando=probando-1;
+       }
+       */
+       probando =parseInt(prompt("pon las lineas"));
+       let resultado="";
+       let resultado2="";
+       for(lineas = probando;lineas>0;lineas=lineas-1){
+           if(lineas %2==1){
+               resultado +="X";
+               resultado2 += "O";
+               
+           }
+           else{
+               resultado +="O";
+               resultado2 += "X";
+           }
+       }
         
-            probando = probando -1;
-        }
-        */
+       for(filas=probando;filas>0;filas=filas-1){
+           if(filas %2 ==1){
+               console.log(resultado);
+           }
+           else{
+               console.log(resultado2);
+           }
+           
+       }   
+       
+        
+    
+        
+        
         /*
         //esto funciona sacando una linea vacia si no es par o al reves
         var probando = parseInt(prompt("pon las lineas"));
@@ -64,12 +91,14 @@
         }
         */
        //Aqui sale pero el doble
+       /*
         var probando = parseInt(prompt("pon las lineas"));
         var resultado = "";
         var resultado2 = "";
         var probando2 = probando;
         var lineas = probando;
         for(var lineas=probando2; lineas > 0; lineas=lineas-1){
+            
             for(var probando2; probando2 >0;probando2=probando2-1){
                 if(probando2 %2 == 0){
                     resultado += "X";
@@ -92,9 +121,17 @@
             console.log(resultado2);
             probando = probando -1;
         }
-       
+       */
+     
         
         
+        
+       /* while(probando != 0){
+            console.log(resultado);
+            console.log(resultado2);
+            probando = probando -1;
+        }
+        */
         
         
 /*
