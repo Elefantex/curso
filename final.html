@@ -31,7 +31,8 @@
            probando=probando-1;
        }
        */
-       probando =parseInt(prompt("pon las lineas"));
+       probando =parseInt(prompt("letras"));
+     //probando2 =parseInt(prompt("veces"))
        let resultado="";
        let resultado2="";
        for(lineas = probando;lineas>0;lineas=lineas-1){
@@ -45,7 +46,6 @@
                resultado2 += "X";
            }
        }
-        
        for(filas=probando;filas>0;filas=filas-1){
            if(filas %2 ==1){
                console.log(resultado);
